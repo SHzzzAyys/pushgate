@@ -1,0 +1,14 @@
+{
+  "name": "pushgate",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260522.1",
+    "typescript": "^6.0.3",
+    "wrangler": "^4.93.1"
+  }
+}

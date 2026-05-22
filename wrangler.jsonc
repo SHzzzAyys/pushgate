@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "pushgate",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-05-01",
+  "observability": { "enabled": true }
+  // 渠道凭证用 secret 注入（不写在这里）：
+  //   PUSH_KEY            访问密钥（自己定，调用时放在 URL 里）
+  //   BARK_URL            如 https://api.day.app/你的devicekey
+  //   DINGTALK_WEBHOOK    钉钉群机器人 webhook（可选 DINGTALK_SECRET 加签）
+  //   FEISHU_WEBHOOK      飞书群机器人 webhook（可选 FEISHU_SECRET 加签）
+  //   RESEND_API_KEY + MAIL_TO + MAIL_FROM   邮件（选配）
+  // 设置：npx wrangler secret put PUSH_KEY  （依此类推）
+}
